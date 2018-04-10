@@ -2,7 +2,7 @@ require 'rubygems'
 require 'selenium-webdriver'
 require 'watir-webdriver'
 
-#$DEBUG = true
+$DEBUG = true
 #driver = Selenium::WebDriver.for :chrome
 driver = Watir::Browser.new :firefox
 
