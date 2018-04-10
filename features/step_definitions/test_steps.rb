@@ -4,7 +4,7 @@ require 'watir-webdriver'
 
 $DEBUG = true
 #driver = Selenium::WebDriver.for :chrome
-driver = Watir::Browser.new :firefox
+driver = Watir::Browser.new :phantomjs
 
 When ("I go to google") do 
     #driver.get "http://google.com"
