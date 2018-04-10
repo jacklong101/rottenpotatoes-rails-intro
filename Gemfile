@@ -42,6 +42,7 @@ group :development, :test do
   gem 'byebug'
   
   gem 'selenium-webdriver'
+  gem 'watir-webdriver'
 
   gem 'rspec-rails'
   gem 'guard-rspec'

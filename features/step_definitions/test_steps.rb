@@ -1,11 +1,14 @@
 require 'rubygems'
 require 'selenium-webdriver'
+require 'watir-webdriver'
 
-driver = Selenium::WebDriver.for :chrome
+#driver = Selenium::WebDriver.for :chrome
+driver = Watir::Browser.new :phantomjs
 
 When ("I go to google") do 
     #driver.get "http://google.com"
-    driver.navigate.to "google.com"
+    #driver.navigate.to "google.com"
+    driver.goto "www.google.com"
 end
 
 And ("I search for cheese") do
