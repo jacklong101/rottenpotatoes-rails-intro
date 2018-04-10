@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'selenium-webdriver'
+#require 'selenium-webdriver'
 require 'watir-webdriver'
 
 #driver = Selenium::WebDriver.for :chrome
