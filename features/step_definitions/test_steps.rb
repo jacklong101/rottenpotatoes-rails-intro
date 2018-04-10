@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'selenium-webdriver'
 
-driver = Selenium::WebDriver.for :firefox
+driver = Selenium::WebDriver.for :chrome
 
 When ("I go to google") do 
     driver.get "http://google.com"
@@ -25,10 +25,12 @@ end
 driver.quit
 
 check = 0
-When ("I add {int} and {int}") do |one, two|
+#When ("I add {int} and {int}") do |one, two|
+When(/^I add (\d+) and (\d+)$/) do |one, two|
   check = one + two
 end
 
-Then ("I should see {int}") do |input|
-  check == input + 1
+#Then ("I should see {int}") do |input|
+When(/^I should see (\d+)$/) do |input|
+  check == input
 end
