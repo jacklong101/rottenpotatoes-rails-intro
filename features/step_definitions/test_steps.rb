@@ -31,3 +31,4 @@ end
 
 Then ("I should see {int}") do |input|
   check == input + 1
+end
