@@ -8,8 +8,6 @@ gem 'rails', '4.2.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
-gem 'watir'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -45,7 +43,7 @@ group :development, :test do
   gem 'byebug'
   
   gem 'selenium-webdriver'
-  #gem 'watir-webdriver'
+  gem 'watir-webdriver'
 
   gem 'rspec-rails'
   gem 'guard-rspec'
