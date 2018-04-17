@@ -9,8 +9,8 @@ driver = Selenium::WebDriver.for :chrome
 
 When ("I go to google") do 
     #driver.get "http://google.com"
-    #driver.navigate.to "google.com"
-    driver.goto "www.google.com"
+    driver.navigate.to "google.com"
+    #driver.goto "www.google.com"
 end
 
 And ("I search for cheese") do
