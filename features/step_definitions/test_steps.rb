@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'selenium-webdriver'
+require 'selenium'
 require 'watir-webdriver'
 require 'cucumber'
 
