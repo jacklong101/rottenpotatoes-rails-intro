@@ -1,10 +1,10 @@
 require 'rubygems'
-require 'selenium'
+require 'selenium-webdriver'
 require 'watir-webdriver'
 require 'cucumber'
 
 #$DEBUG = true
-driver = Selenium::WebDriver
+driver = Selenium::WebDriver.for :chrome
 #driver = Watir::Browser.new :firefox
 
 When ("I go to google") do 
