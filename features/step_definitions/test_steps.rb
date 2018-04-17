@@ -4,8 +4,8 @@ require 'watir-webdriver'
 require 'cucumber'
 
 #$DEBUG = true
-#driver = Selenium::WebDriver.for :chrome
-driver = Watir::Browser.new :firefox
+driver = Selenium::WebDriver
+#driver = Watir::Browser.new :firefox
 
 When ("I go to google") do 
     #driver.get "http://google.com"
