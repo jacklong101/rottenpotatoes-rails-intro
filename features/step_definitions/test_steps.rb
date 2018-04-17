@@ -5,7 +5,7 @@ require 'cucumber'
 
 #$DEBUG = true
 #driver = Selenium::WebDriver.for :chrome
-driver = Selenium::WebDriver::Remote::Capabilities.new
+driver = Selenium::WebDriver.for(:remote, :url => "http://127.0.0.1:4444/wd/hub")
 #driver = Watir::Browser.new :firefox
 
 When ("I go to google") do 
