@@ -3,9 +3,15 @@ require 'selenium-webdriver'
 require 'watir-webdriver'
 require 'cucumber'
 
+caps = {
+    :browser_name          => 'chrome',
+    :javascript_enabled    => true,
+    :takes_screenshot      => true
+    }
+
 #$DEBUG = true
 #driver = Selenium::WebDriver.for :chrome
-driver = Selenium::WebDriver.for(:remote, :url => "http://127.0.0.1:4444/wd/hub")
+driver = Selenium::WebDriver.for(:remote, :url => "http://127.0.0.1:4444/wd/hub", :desired_capabilities => caps)
 #driver = Watir::Browser.new :firefox
 
 When ("I go to google") do 
